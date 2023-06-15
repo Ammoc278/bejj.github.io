@@ -1,0 +1,39 @@
+span{
+	font-size: 24px;
+	color: black;
+}
+body{
+	background: var(--background-color);
+}
+div{
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	align-items: center;
+	justify-content: center;
+	background: var(--background-color);
+}
+
+@media (max-width: 400px){
+	.header{
+		flex-direction: column;
+	}
+	.header > span {
+		font-size: 16px;
+	}
+	
+}
+
+@media (prefers-color-scheme: dark){
+	.header{
+		background: black;
+	}
+	.header > span {
+		color: white;
+	}
+}
+
+:root{
+	--background-color:#ffffff;
+
+}
